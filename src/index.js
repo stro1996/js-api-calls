@@ -11,7 +11,7 @@ const getTeams = async () => {
     headers: {...header}
   });
 
-  if (data.ok && data && data.data && data.data.teams) {
+  if (data.status === 200) {
     return data.data.teams;
   } else {
     throw GENERAL_ERROR;
@@ -19,11 +19,11 @@ const getTeams = async () => {
 };
 
 const getTeam = async (id) => {
-  const data = await axios.get(`${BASE_URL}${id}`, {
+  const data = await axios.get(`${BASE_URL}teams/${id}`, {
     headers: {...header}
   });
 
-  if (data.ok && data && data.data) {
+  if (data.status === 200) {
     return data.data;
   } else {
     throw GENERAL_ERROR;
@@ -36,7 +36,7 @@ const getUpcomingMatches = async (id) => {
   });
 
 
-  if (data.ok && data && data.data && data.data.matches) {
+  if (data.status === 200) {
     return data.data.matches;
   } else {
     throw GENERAL_ERROR;
