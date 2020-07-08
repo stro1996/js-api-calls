@@ -1,6 +1,6 @@
 {
   "name": "@stro1996/js-api-calls",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -20,5 +20,8 @@
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }
