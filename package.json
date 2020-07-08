@@ -1,9 +1,8 @@
 {
   "name": "@stro1996/js-api-calls",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -16,10 +15,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "rollup": "^2.21.0",
-    "rollup-plugin-delete": "^2.0.0"
-  },
   "files": [
     "dist"
   ],
